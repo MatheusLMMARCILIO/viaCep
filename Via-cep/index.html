@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Correios</title>
+  </head>
+  <body>
+    <header>
+      <img src="public/IMAGE/Correios.png" alt="Logo" width="150px" />
+
+      <ul>
+        <li><a href="#">Rastrear</a></li>
+        <li><a href="#">Enviar</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Agencias</a></li>
+      </ul>
+
+      <button>Entrar</button>
+    </header>
+
+    <section class="correios">
+      <div class="box">
+        <h1>Envie e acompanhe suas encomendas</h1>
+
+        <p>Logística rápida e segura para todo o Brasil.</p>
+
+        <div class="inputs">
+          <input type="text" id="cepId" placeholder="Digite o seu Cep" />
+
+          <button id="btnSubmit">Localizar</button>
+        </div>
+      </div>
+      
+      <form class="submitForm">
+        <h3>Seu endereço aqui!</h3>
+
+        <ul>
+          <li><input class="Rua" type="text" placeholder="Rua" /></li>
+          <li><input class="Bairro" type="text" placeholder="Bairro" /></li>
+          <li><input class="Cep" type="text" placeholder="Cep" /></li>
+          <li><input class="Cidade" type="text" placeholder="Cidade" /></li>
+        </ul>
+      </form>
+    </section>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
