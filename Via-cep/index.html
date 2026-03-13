@@ -1,51 +1,142 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
-    <title>Correios</title>
-  </head>
-  <body>
-    <header>
-      <img src="public/IMAGE/Correios.png" alt="Logo" width="150px" />
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="public/IMAGE/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/style.css" />
+  <title>Correios</title>
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="public/IMAGE/Correios.png" alt="Logo" /></a>
+
+    <ul>
+      <li><a href="#">Rastrear</a></li>
+      <li><a href="#">Enviar</a></li>
+      <li><a href="#">Serviços</a></li>
+      <li><a href="#">Agencias</a></li>
+    </ul>
+
+    <button>Entrar</button>
+  </header>
+
+  <section class="correios">
+    <div class="box">
+      <h1>Envie e acompanhe suas encomendas</h1>
+
+      <p>Logística rápida e segura para todo o Brasil.</p>
+
+      <div class="inputs">
+        <input type="text" id="cepId" placeholder="Digite o seu Cep" />
+
+        <button id="btnSubmit">Localizar</button>
+      </div>
+    </div>
+
+    <form class="submitForm">
+      <h3>Seu endereço aqui!</h3>
 
       <ul>
-        <li><a href="#">Rastrear</a></li>
-        <li><a href="#">Enviar</a></li>
-        <li><a href="#">Serviços</a></li>
-        <li><a href="#">Agencias</a></li>
+        <li><input class="Rua" type="text" placeholder="Rua" /></li>
+        <li><input class="Bairro" type="text" placeholder="Bairro" /></li>
+        <li><input class="Cep" type="text" placeholder="Cep" /></li>
+        <li><input class="Cidade" type="text" placeholder="Cidade" /></li>
+      </ul>
+    </form>
+  </section>
+
+
+  <section class="services">
+    <h2>Nossos Serviços</h2>
+
+    <div class="services-grid">
+
+      <div class="card">
+        <h3>Entrega Expressa</h3>
+        <p>Envie suas encomendas com rapidez e segurança para qualquer lugar do Brasil.</p>
+      </div>
+
+      <div class="card">
+        <h3>Logística Empresarial</h3>
+        <p>Soluções completas para empresas que precisam enviar produtos todos os dias.</p>
+      </div>
+
+      <div class="card">
+        <h3>Rastreamento</h3>
+        <p>Acompanhe sua encomenda em tempo real diretamente pelo nosso sistema.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="benefits">
+
+    <div class="benefits-box">
+      <h2>Por que escolher nossos serviços?</h2>
+
+      <ul>
+        <li>🚚 Entrega rápida em todo Brasil</li>
+        <li>🔒 Segurança nas encomendas</li>
+        <li>📦 Rastreamento em tempo real</li>
+        <li>💳 Pagamentos facilitados</li>
       </ul>
 
-      <button>Entrar</button>
-    </header>
+    </div>
 
-    <section class="correios">
-      <div class="box">
-        <h1>Envie e acompanhe suas encomendas</h1>
+  </section>
 
-        <p>Logística rápida e segura para todo o Brasil.</p>
 
-        <div class="inputs">
-          <input type="text" id="cepId" placeholder="Digite o seu Cep" />
+  <section class="track">
 
-          <button id="btnSubmit">Localizar</button>
-        </div>
+    <h2>Rastreie sua encomenda</h2>
+
+    <div class="track-box">
+      <input type="text" placeholder="Digite seu código de rastreio">
+      <button>Rastrear</button>
+    </div>
+
+  </section>
+
+
+  <footer>
+
+    <div class="footer-grid">
+
+      <div>
+        <h3>Correios</h3>
+        <p>Logística inteligente para todo o Brasil.</p>
       </div>
-      
-      <form class="submitForm">
-        <h3>Seu endereço aqui!</h3>
 
+      <div>
+        <h4>Serviços</h4>
         <ul>
-          <li><input class="Rua" type="text" placeholder="Rua" /></li>
-          <li><input class="Bairro" type="text" placeholder="Bairro" /></li>
-          <li><input class="Cep" type="text" placeholder="Cep" /></li>
-          <li><input class="Cidade" type="text" placeholder="Cidade" /></li>
+          <li>Envios</li>
+          <li>Rastreamento</li>
+          <li>Logística</li>
         </ul>
-      </form>
-    </section>
+      </div>
 
-    <script type="module" src="/src/main.js"></script>
-  </body>
+      <div>
+        <h4>Empresa</h4>
+        <ul>
+          <li>Sobre</li>
+          <li>Carreiras</li>
+          <li>Contato</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="copy">© 2026 Correios - Todos os direitos reservados</p>
+
+  </footer>
+
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
