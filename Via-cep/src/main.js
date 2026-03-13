@@ -1,3 +1,5 @@
+
+
 const valueCep = document.getElementById('cepId')
 const  btnSubmit = document.getElementById('btnSubmit')
 const form = document.querySelector('.submitForm')
@@ -13,6 +15,8 @@ btnSubmit.addEventListener("click", ()=>{
 viaCep(valor)
 
 })
+
+
 
 async function viaCep(cep) {
 
