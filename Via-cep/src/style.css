@@ -55,7 +55,7 @@ header button {
 .correios {
   width: 100%;
   height: 80vh;
-  background: url(/public/IMAGE/bgc-img.jpg);
+  background: url(/Via-cep/public/IMAGE/bgc-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
